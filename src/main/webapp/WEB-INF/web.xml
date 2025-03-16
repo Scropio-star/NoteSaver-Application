@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <display-name>NoteSaver Web Application</display-name>
+
+  <!-- Servlet Definitions -->
+  <servlet>
+    <servlet-name>NotesServlet</servlet-name>
+    <servlet-class>note.controller.NotesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>TextNoteServlet</servlet-name>
+    <servlet-class>note.controller.TextNoteServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>ImageNoteServlet</servlet-name>
+    <servlet-class>note.controller.ImageNoteServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>UrlServlet</servlet-name>
+    <servlet-class>note.controller.UrlServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>NoteServlet</servlet-name>
+    <servlet-class>note.controller.NotesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>HealthCheckServlet</servlet-name>
+    <servlet-class>note.controller.HealthCheckServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+
+  <!-- Servlet Mappings -->
+  <servlet-mapping>
+    <servlet-name>NotesServlet</servlet-name>
+    <url-pattern>/api/notes/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TextNoteServlet</servlet-name>
+    <url-pattern>/api/note/model/TextNote</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageNoteServlet</servlet-name>
+    <url-pattern>/api/note/model/ImageNote</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UrlServlet</servlet-name>
+    <url-pattern>/api/note/model/URLNote</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoteServlet</servlet-name>
+    <url-pattern>/api/note/model/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HealthCheckServlet</servlet-name>
+    <url-pattern>/health</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

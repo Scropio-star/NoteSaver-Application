@@ -1,0 +1,16 @@
+note\controller\UrlServlet.class
+note\model\CombinedNote.class
+note\controller\BaseServlet.class
+note\service\NoteService.class
+note\controller\HealthCheckServlet.class
+note\model\CombinedNote$ComponentType.class
+note\controller\TextNoteServlet.class
+note\controller\NotesServlet.class
+note\model\Note.class
+note\model\CombinedNote$NoteComponents.class
+note\model\URLNote.class
+note\model\ImageNote.class
+note\controller\ImageNoteServlet.class
+note\repository\NoteRepository.class
+note\model\TextNote.class
+note\main\Main.class
